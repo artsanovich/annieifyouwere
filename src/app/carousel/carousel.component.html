@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="content">
+    <h1 class="content__title">
+      If you were<span class="content__title--dots">...</span>
+    </h1>
+    <div class="carousel">
+      <ng-container *ngFor="let item of data; let idx = index">
+        <ng-container *ngIf="currentSlide === item?.id">
+          <h2 class="carousel__title"
+              [ngStyle]="{
+              'color' : ''+ item.themeColor +'',
+              '-webkit-text-stroke' : item?.style === 'insane' ? '2px black' : '1px black'
+              }"
+          >
+            {{item?.title}}
+          </h2>
+          <div class="carousel__content" [ngStyle]="{'background-color' : item?.themeColor}">
+            <ng-container *ngIf="item?.image">
+              <div class="carousel__frame"
+                   [ngStyle]="{
+                   'background-image' : 'url(../assets/'+ item?.image +')',
+                   'background-color' : item?.themeColor === 'insane' ? 'transparent' : 'white'
+                   }">
+              </div>
+            </ng-container>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+    <div class="buttons">
+      <button class="buttons__btn buttons__btn--prev" (click)="onPreviousClick()">prev</button>
+      <button class="buttons__btn buttons__btn--next" (click)="onNextClick()">next</button>
+    </div>
+  </div>
+</div>
+
