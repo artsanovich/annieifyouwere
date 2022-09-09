@@ -2,6 +2,8 @@ Project deployed link - https://annieifyouwere.web.app
 
 Password 22.02.2022
 
+The app was created primarily for the iPhone Pro Max 11 (414x896) without adaptation for desktops. 
+
 # Annie
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
