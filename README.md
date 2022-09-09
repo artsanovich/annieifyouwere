@@ -1,3 +1,6 @@
+Project deployed link - https://annieifyouwere.web.app
+Password 22.02.2022
+
 # Annie
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
